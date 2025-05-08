@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friseur Studio Elegance</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      background-color: #fdfdfd;
+    }
+    header {
+      background-color: #a0522d;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #8b4513;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url() no-repeat center center/cover;
+      height: 400px;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #8b4513;
+    }
+    .services, .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .services div, .contact div {
+      flex: 1;
+      min-width: 250px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #a0522d;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Friseur Studio Elegance</h1>
+    <p>Ihr Haar in den besten Händen</p>
+  </header>
+
+  <nav>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#zeiten">Öffnungszeiten</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <div class="hero"></div>
+
+  <div class="container">
+    <section id="leistungen">
+      <h2>Unsere Leistungen</h2>
+      <div class="services">
+        <div><strong>Haarschnitt Damen</strong><br>Modern, klassisch oder extravagant – ganz nach Ihrem Stil.</div>
+        <div><strong>Haarschnitt Herren</strong><br>Vom präzisen Fade bis zum klassischen Schnitt.</div>
+        <div><strong>Coloration</strong><br>Professionelle Farbberatung und Umsetzung.</div>
+        <div><strong>Styling & Events</strong><br>Frisuren für Hochzeiten, Partys & Shootings.</div>
+      </div>
+    </section>
+
+    <section id="zeiten">
+      <h2>Öffnungszeiten</h2>
+      <ul>
+        <li>Montag – Freitag: 9:00 – 18:00 Uhr</li>
+        <li>Samstag: 9:00 – 14:00 Uhr</li>
+        <li>Sonntag: geschlossen</li>
+      </ul>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <div class="contact">
+        <div>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="nachricht">Nachricht:</label>
+            <textarea id="nachricht" rows="5" required></textarea>
+
+            <button type="submit">Absenden</button>
+          </form>
+        </div>
+        <div>
+          <p><strong>Adresse:</strong><br>Hauptstraße 123<br>12345 Musterstadt</p>
+          <p><strong>Telefon:</strong> 01234 / 567890</p>
+          <p><strong>E-Mail:</strong> info@studio-elegance.de</p>
+
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.337456257142!2d2.292292915674572!3d48.858844179287876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdeb5e3a393%3A0x8c261d0c8f5e8c7f!2sEiffelturm!5e0!3m2!1sde!2sde!4v1615558853632"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Friseur Studio Elegance – Alle Rechte vorbehalten.
+  </footer>
+
+</body>
+</html>
